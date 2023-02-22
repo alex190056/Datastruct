@@ -1,16 +1,14 @@
 [tool.poetry]
-name = "datastruct"
+name = "project-poetry"
 version = "0.1.0"
 description = ""
-authors = ["maksfrol96 <maxfrol96@mail.ru>"]
+authors = ["alex <drofa528@bk.ru>"]
 readme = "README.md"
+packages = [{include = "project_poetry"}]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.11"
 
-
-[tool.poetry.group.dev.dependencies]
-coverage = "^7.1.0"
 
 [build-system]
 requires = ["poetry-core"]
