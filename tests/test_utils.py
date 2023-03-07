@@ -18,3 +18,7 @@ class TestNode(unittest.TestCase):
         queue.enqueue('data2')
         queue.enqueue('data3')
         self.assertEqual(queue.head.data, 'data1')
+        self.assertEqual(queue.dequeue(), 'data1')
+        self.assertEqual(queue.dequeue(), 'data2')
+        self.assertEqual(queue.dequeue(), 'data3')
+        self.assertEqual(queue.dequeue(), None)

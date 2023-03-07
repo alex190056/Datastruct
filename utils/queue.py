@@ -19,3 +19,12 @@ class Queue:
         else:
             self.tail.next_node = new_node
             self.tail = new_node
+
+    def dequeue(self):
+        deqeueued_node = self.head
+        if self.head == None:
+            return None
+        else:
+            self.head = self.head.next_node
+            return deqeueued_node.data
+
